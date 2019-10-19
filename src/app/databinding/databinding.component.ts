@@ -3,16 +3,25 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-databinding',
   templateUrl: './databinding.component.html',
+  styles: [`
+        .red-border {
+            border: 1px solid red;
+        }
+  
+  `]
 
 })
 export class DatabindingComponent {
 aString = 'Ich bin ein String';
 aNumber = 100;
-constructor(){
+attachClass = false;
+hintergrund = 'blue';
+
+constructor() {
   setTimeout(() => {
     this.aNumber += 200;
-
-  },3000);
+    this.attachClass = true;
+    this.hintergrund = 'red';
+      }, 3000);
 }
-
 }
