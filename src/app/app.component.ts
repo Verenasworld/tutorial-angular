@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
     <hr>
     <app-databinding></app-databinding>
   `,
-
+styles: [` 
+    h1{
+    color: red;
+  }
+`]
 })
 export class AppComponent {
 

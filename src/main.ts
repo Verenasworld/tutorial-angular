@@ -8,3 +8,4 @@ if (environment.production) {
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule);
+//angular 2 app start here , starte dich bitte selber und übergebe App Module
