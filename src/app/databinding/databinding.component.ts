@@ -16,14 +16,14 @@ aString = 'Ich bin ein String';
 aNumber = 100;
 attachClass = false;
 hintergrund = 'blue';
-schrift = 'black';
+schrift = 12;
 
 constructor() {
   setTimeout(() => {
     this.aNumber += 200;
     this.attachClass = true;
     this.hintergrund = 'red';
-    this.schrift = 'white';
+    this.schrift = 18;
       }, 3000);
 }
 

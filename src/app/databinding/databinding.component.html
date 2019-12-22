@@ -7,7 +7,7 @@
 <div>
   <input type="text" [value]="aNumber">
 </div>
-<div [ngClass]="{' red-border': attachClass}" [ngStyle]="{'background-color': hintergrund}" >
+<div [ngClass]="{' red-border': attachClass}" [ngStyle]="{'background-color': hintergrund, 'fontsize':schrift}" >
 ich liebe meine schnuffi
 </div>
 <app-property-binding [name]="'Max'"></app-property-binding>
@@ -15,3 +15,6 @@ ich liebe meine schnuffi
 <h4>Event Binding</h4>
 <button (click)="keksi($event)">click mich!</button>
 <app-event-binding (clicked)="aString = $event"></app-event-binding>
+<hr>
+<h4>Two-Way-Binding</h4>
+<input type="text" [(ngModel)]="hintergrund">
