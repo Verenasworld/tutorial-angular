@@ -26,4 +26,12 @@ constructor() {
     this.schrift = 'white';
       }, 3000);
 }
+
+keksi(event) {
+  let a = 5;
+  let b = 2;
+  console.log(event);
+  alert(a + b);
+
+}
 }
